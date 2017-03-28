@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,user-scalable=no" />
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+</head>
+<body data-creatIndexList = "miaovList">
+
+
+<script type="text/javascript" src="js/pinyin.js"></script>
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/ListIndex3.js"></script>
+<script type="text/javascript">
+(function() {
+		new Scr().init();
+	var nav = document.querySelector('#nav');
+	var navList = document.querySelector('.navList');
+	var scale = nav.clientHeight / navList.offsetHeight;
+	navList.style.WebkitTransform = navList.style.transform = "scale(" + scale + ")";
+
+})();
+</script>
+</body>
+</html>
